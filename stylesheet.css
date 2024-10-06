@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.header-left h1 {
+    font-size: 3rem;
+    color: #BB86FC;
+}
+
+.header-left p {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.header-right ul li {
+    margin: 5px 0;
+}
+
+.header-right ul li a {
+    color: #BB86FC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-right ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    color: #BB86FC;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Content Sections */
+section {
+    margin-bottom: 40px;
+    opacity: 0;  /* Initially hidden for fade-in effect */
+    transform: translateY(20px);  /* Initial position for fade-in */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;  /* Animation settings */
+}
+
+.fade-in {
+    opacity: 1;  /* Fully visible */
+    transform: translateY(0);  /* Reset position */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-left: 4px solid #BB86FC;
+    padding-left: 10px;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Smooth Scroll Effects */
+body {
+    scroll-behavior: smooth;
+}
